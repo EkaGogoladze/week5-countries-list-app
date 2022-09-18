@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+body{
+  background-color: bisque;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{ 
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.block {
+  width: 500px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box{
+   display: flex;
+   justify-content: center;
+}
+.img{
+  width: 300px;
+  height: 380px;
+  border-radius: 25px;
+}
+.image{
+  border: 2px dashed  black;
+  padding: 3px;
+}
+h1, h2, p{
+  font-family: 'Montserrat', sans-serif;
+}
+h1{
+  letter-spacing: 4px;
+}
+p{
+  margin: 0;
+  text-indent: 25px;
+}
+.btn-box{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 20px
+}
+.btn{
+  padding: 5px 18px 5px 18px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  border-radius: 25px;
+  background-color:rgb(252, 145, 15);
+}
+.btn-show{ 
+  background: none;
+  border: none;
+  color:rgb(252, 145, 15);
+  font-weight: bold;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+.image-box-one{
+  display:flex;
+  justify-content: flex-end;
+  margin-top: 10px
+}
+.image-box-two{
+  display:flex;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+.img-one{
+  border: 2px dashed black;
+}
+.img-two{
+  border: 2px dashed black;
+  border-radius: 50%;
+}
+input{
+  padding: 16px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  border: 2px dashed black;
+}
+.crossed{
+  text-decoration: line-through 3px rgb(252, 145, 15);
+}
+ul{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 80px
+}
+ul,li{
+  list-style: none;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+.add{
+  margin-top: 30px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media all and (max-width: 800px){
+  .container{
+    width: 350px;
   }
-  to {
-    transform: rotate(360deg);
+  .image{
+    margin-left: 50px
   }
 }
